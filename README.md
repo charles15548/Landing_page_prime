@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Activity Metrics (Supabase)
+
+1. Copy `.env.example` to `.env.local` and set your real values.
+2. Create the `public.user_activity` table directly from Supabase SQL Editor.
+3. Start the app with `npm run dev`.
+
+Events being tracked:
+
+- `visit` when the landing page loads.
+- `download_click` when user clicks either download CTA.
+
+Debug:
+
+- `NEXT_PUBLIC_ACTIVITY_DEBUG_LOGS=true` enables client logs in browser console.
+- `ACTIVITY_DEBUG_LOGS=true` enables server logs in terminal.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

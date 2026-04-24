@@ -1,10 +1,16 @@
 import SeriesReferenceAnimation from "./_components/series-reference/SeriesReferenceAnimation";
 import ExerciseProgressChart from "./_components/progress-chart/ExerciseProgressChart";
+import {
+  ActivityTracker,
+  DownloadTrackedLink,
+} from "./_components/analytics/ActivityTracker";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-yellow-500/30">
+      <ActivityTracker />
+
       {/* --- HERO SECTION --- */}
       <section className="relative flex flex-col items-center justify-center px-6 pt-20 pb-16 text-center overflow-hidden">
         {/* Glow de fondo para el estilo Premium */}
@@ -33,7 +39,8 @@ export default function Home() {
             Entrena con rutinas optimizadas y logra progreso real en Taekwondo.
           </p>
 
-          <a
+          <DownloadTrackedLink
+            source="hero_cta"
             href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +53,7 @@ export default function Home() {
                 DESCARGAR PRIME
               </span>
             </button>
-          </a>
+          </DownloadTrackedLink>
         </div>
 
         {/* Mockup Principal */}
@@ -104,7 +111,8 @@ export default function Home() {
         </h3>
 
         <div className="flex flex-col sm:flex-row  justify-center items-center mb-4">
-          <a
+          <DownloadTrackedLink
+            source="footer_badge"
             href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,7 +129,7 @@ export default function Home() {
               height={140}
               className="object-contain drop-shadow-lg active:drop-shadow-sm"
             />
-          </a>
+          </DownloadTrackedLink>
         </div>
 
         <div className="space-y-4 opacity-40">
