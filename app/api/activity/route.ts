@@ -4,7 +4,7 @@ import {
   getSupabaseAdminClient,
   isActivityTrackingEnabled,
 } from "@/lib/supabase-admin";
-
+ 
 type ActivityPayload = {
   eventType?: unknown;
   pageUrl?: unknown;
@@ -64,6 +64,10 @@ function getClientIpAddress(request: Request) {
 
   const firstIp = forwardedFor.split(",")[0]?.trim();
   return firstIp && firstIp.length > 0 ? firstIp : null;
+}
+ 
+export async function GET() {
+    return NextResponse.json({ok: true, message: "activity endpoint alive"});
 }
 
 export async function POST(request: Request) {

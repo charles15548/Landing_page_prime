@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-gray-400 text-lg mb-8 max-w-md mx-auto">
             Entrena con rutinas optimizadas y logra progreso real en Taekwondo.
           </p>
-
+ 
           <DownloadTrackedLink
             source="hero_cta"
             href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
