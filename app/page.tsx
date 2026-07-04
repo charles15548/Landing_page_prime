@@ -19,13 +19,18 @@ export default function Home() {
         <div className="z-10 animate-fade-in">
           <div className="flex justify-center mb-6">
             {/* Agregamos drop-shadow-xl y especificamos el color blanco con opacidad */}
-            <Image
+            <a
+            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share">
+               <Image
               src="/ic_launcher.png"
               alt="PRIME Logo"
               width={120} // Equivalente a w-30 (30 * 4px)
               height={120}
               className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+              
             />
+            </a>
+           
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
@@ -44,15 +49,77 @@ export default function Home() {
             href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block"
+            className="relative inline-flex items-center justify-center"
           >
-            <button className="relative overflow-hidden group px-8 py-4 rounded-full font-bold text-lg text-black bg-white bg-gradient-to-b from-white to-zinc-200 border border-zinc-200 hover:border-white/80 shadow-[0_4px_14px_0_rgba(255,255,255,0.15)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)] transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] active:translate-y-0.5 active:scale-[0.98]">
-              {/* El contenido del reflejo y el texto que ya tenemos */}
-              <span className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/60 to-transparent" />
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                DESCARGAR PRIME
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -left-12 top-1/2 hidden -translate-y-1/2 sm:block"
+            >
+              <span className="relative block">
+                <span className="absolute inset-0 blur-md opacity-40 bg-white/20 rounded-full" />
+                <svg
+                  className="relative motion-safe:animate-bounce"
+                  style={{ animationDelay: "100ms" }}
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5 5.5L15 12l-6.5 6.5"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    opacity="0.9"
+                  />
+                </svg>
               </span>
-            </button>
+            </span>
+
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-12 top-1/2 hidden -translate-y-1/2 sm:block"
+            >
+              <span className="relative block">
+                <span className="absolute inset-0 blur-md opacity-40 bg-white/20 rounded-full" />
+                <svg
+                  className="relative motion-safe:animate-bounce"
+                  style={{ animationDelay: "250ms" }}
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 5.5L9 12l6.5 6.5"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    opacity="0.9"
+                  />
+                </svg>
+              </span>
+            </span>
+
+            <span className="relative overflow-hidden group px-8 py-4 rounded-full font-bold text-lg text-black bg-white bg-gradient-to-b from-white to-zinc-200 border border-zinc-200 hover:border-white/80 shadow-[0_4px_14px_0_rgba(255,255,255,0.15)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.25)] transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.03] active:translate-y-0.5 active:scale-[0.98]">
+              <span className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+
+              <span className="relative z-10 flex items-center justify-center gap-3">
+                <Image
+                  src="/playicon.png"
+                  alt="Google Play"
+                  width={22}
+                  height={22}
+                  className="shrink-0"
+                />
+
+                <span>EMPEZAR AHORA</span>
+              </span>
+            </span>
           </DownloadTrackedLink>
         </div>
 
