@@ -58,3 +58,11 @@ export function getSupabaseAdminClient() {
   logServer("supabase_client_created", { url: normalizedUrl });
   return cachedClient;
 }
+
+ 
+export function getSupabaseBrowserClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+}
