@@ -19,7 +19,7 @@ export default function Home() {
         <div className="z-10 animate-fade-in">
           <div className="flex justify-center mb-6">
             {/* Agregamos drop-shadow-xl y especificamos el color blanco con opacidad */}
-            <a  href="/get?r=hero_cta">
+            <a  href="/api/get?r=hero_cta">
               <Image
                 src="/ic_launcher.png"
                 alt="PRIME Logo"
@@ -43,7 +43,7 @@ export default function Home() {
 
           <DownloadTrackedLink
             source="hero_cta"
-             href="/get?r=hero_cta"
+             href="/api/get?r=hero_cta"
             className="relative inline-flex items-center justify-center"
           >
             <span
@@ -175,7 +175,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row  justify-center items-center mb-4">
           <DownloadTrackedLink
             source="footer_badge"
-             href="/get?r=hero_cta"
+             href="/api/get?r=hero_cta"
             rel="noopener noreferrer"
             className="
     inline-block transition-all duration-150 
