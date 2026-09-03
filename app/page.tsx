@@ -19,7 +19,7 @@ export default function Home() {
         <div className="z-10 animate-fade-in">
           <div className="flex justify-center mb-6">
             {/* Agregamos drop-shadow-xl y especificamos el color blanco con opacidad */}
-            <a href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
+            <a href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
            >
               <Image
                 src="/ic_launcher.png"
@@ -44,7 +44,7 @@ export default function Home() {
 
           <DownloadTrackedLink
             source="hero_cta"
-            href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
+            href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
             className="relative inline-flex items-center justify-center"
           >
             <span
@@ -176,7 +176,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row  justify-center items-center mb-4">
           <DownloadTrackedLink
             source="footer_badge"
-            href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
+            href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
            
             rel="noopener noreferrer"
             className="
