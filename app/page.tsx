@@ -19,18 +19,16 @@ export default function Home() {
         <div className="z-10 animate-fade-in">
           <div className="flex justify-center mb-6">
             {/* Agregamos drop-shadow-xl y especificamos el color blanco con opacidad */}
-            <a
-            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share">
-               <Image
-              src="/ic_launcher.png"
-              alt="PRIME Logo"
-              width={120} // Equivalente a w-30 (30 * 4px)
-              height={120}
-              className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
-              
-            />
+            <a href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
+           >
+              <Image
+                src="/ic_launcher.png"
+                alt="PRIME Logo"
+                width={120} // Equivalente a w-30 (30 * 4px)
+                height={120}
+                className="object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+              />
             </a>
-           
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
@@ -43,12 +41,10 @@ export default function Home() {
           <p className="text-gray-400 text-lg mb-8 max-w-md mx-auto">
             Entrena con rutinas optimizadas y logra progreso real en Taekwondo.
           </p>
- 
+
           <DownloadTrackedLink
             source="hero_cta"
-            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
             className="relative inline-flex items-center justify-center"
           >
             <span
@@ -180,8 +176,8 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row  justify-center items-center mb-4">
           <DownloadTrackedLink
             source="footer_badge"
-            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share"
-            target="_blank"
+            href="intent://play.google.com/store/apps/details?id=com.prime.app_tkd&pcampaignid=web_share#Intent;scheme=https;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.prime.app_tkd%26pcampaignid%3Dweb_share;end"
+           
             rel="noopener noreferrer"
             className="
     inline-block transition-all duration-150 
