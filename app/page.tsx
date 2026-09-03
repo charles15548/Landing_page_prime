@@ -19,7 +19,7 @@ export default function Home() {
         <div className="z-10 animate-fade-in">
           <div className="flex justify-center mb-6">
             {/* Agregamos drop-shadow-xl y especificamos el color blanco con opacidad */}
-            <a href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
+            <a href="https://play.google.com/store/apps/details?id=com.prime.app_tkd"
            >
               <Image
                 src="/ic_launcher.png"
@@ -44,7 +44,7 @@ export default function Home() {
 
           <DownloadTrackedLink
             source="hero_cta"
-            href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
+            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd"
             className="relative inline-flex items-center justify-center"
           >
             <span
@@ -176,7 +176,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row  justify-center items-center mb-4">
           <DownloadTrackedLink
             source="footer_badge"
-            href="intent://details?id=com.prime.app_tkd#Intent;scheme=market;package=com.android.vending;end"
+            href="https://play.google.com/store/apps/details?id=com.prime.app_tkd"
            
             rel="noopener noreferrer"
             className="
